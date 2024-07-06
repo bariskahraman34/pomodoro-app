@@ -1,7 +1,7 @@
 import { Tab, Tabs } from '@mui/material';
 import { useState } from 'react';
 export const CustomTabs = () => {
-    const [value, setValue] = useState(2);
+    const [value, setValue] = useState(0);
 
     const handleChange = (event, newValue) => setValue(newValue);
 
