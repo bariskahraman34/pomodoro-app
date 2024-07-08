@@ -1,3 +1,9 @@
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -19,12 +25,26 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
 }
 
 body {
-  margin: 0;
+  color: rgba(215, 224, 255, 1) !important;
+}
+
+.selectBox .MuiSelect-select.MuiInputBase-input{
   display: flex;
-  place-items: center;
-  width: 100vw;
-  height: 100vh;
+  gap: 5px;
+  align-items: center;
+}
+
+@media(width < 768px) {
+  #root{
+    padding: 0;
+  }
+  .MuiContainer-root{
+    transform: scale(.8);
+  }
 }
